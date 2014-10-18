@@ -100,107 +100,121 @@ angular.module( 'portfolioApp.home', [
         {
             'id': 'cool-material',
             'name': 'Cool Material',
-            'img': 'coolmaterial.png'
+            'img': 'coolmaterial.jpg',
+            'url': 'http://coolmaterial.com'
         },
         {
             'id': 'dealer-direct-parts',
             'name': 'Dealer Direct Parts',
-            'img': 'dealerdirectparts.png'
+            'img': 'dealerdirectparts.jpg',
+            'url': 'http://www.dealerdirectparts.com/'
         },
         {
             'id': 'eternal-snow',
             'name': 'Eternal Snow',
-            'img': 'eternalsnow.png'
-        },
-        {
-            'id': 'ferracci',
-            'name': 'Ferracci',
-            'img': 'ferracci.png'
+            'img': 'eternalsnow.jpg',
+            'url': 'http://www.eternalsnow.com/'
         },
         {
             'id': 'homeq',
             'name': 'Homeq',
-            'img': 'homeq.jpg'
+            'img': 'homeq.jpg',
+            'url': 'http://www.homeq.com.au/'
         },
         {
             'id': 'interbaden',
             'name': 'Interbaden',
-            'img': 'interbaden.png'
+            'img': 'interbaden.jpg',
+            'url': 'http://www.interbaden.nl/'
         },
         {
             'id': 'kidsongs',
             'name': 'Kidsongs',
-            'img': 'kidsongs.png'
+            'img': 'kidsongs.jpg',
+            'url': 'http://www.kidsongs.com/'
         },
         {
             'id': 'listrak',
             'name': 'Listrak',
-            'img': 'listrak.png'
+            'img': 'listrak.jpg',
+            'url': 'http://www.listrak.com/'
         },
         {
             'id': 'luggage-online',
             'name': 'Luggage Online',
-            'img': 'luggageonline.png'
+            'img': 'luggageonline.jpg',
+            'url': 'http://www.luggageonline.com/'
         },
         {
             'id': 'nautical-cross',
             'name': 'Nautical Cross',
-            'img': 'nauticalcross.jpg'
+            'img': 'nauticalcross.jpg',
+            'url': 'http://www.nauticalcross.com/'
         },
         {
             'id': 'roku',
             'name': 'Roku',
-            'img': 'roku.jpg'
+            'img': 'roku.jpg',
+            'url': 'https://www.roku.com'
         },
         {
             'id': 'sailor-jerry',
             'name': 'Sailor Jerry',
-            'img': 'sailorjerry.jpg'
+            'img': 'sailorjerry.jpg',
+            'url': 'http://sailorjerry.com/'
         },
         {
             'id': 'salespro',
             'name': 'SalesPro',
-            'img': 'salespro.png'
+            'img': 'salespro.jpg',
+            'url': 'http://savtechnology.com/'
         },
         {
             'id': 'salonmonster',
             'name': 'SalonMonster',
-            'img': 'salonmonster.png'
+            'img': 'salonmonster.jpg',
+            'url': 'https://salonmonster.com/'
         },
         {
             'id': 'smart-earth',
             'name': 'Smart Earth',
-            'img': 'smartearth.jpg'
+            'img': 'smartearth.jpg',
+            'url': 'http://smartearthlubricants.com/'
         },
         {
             'id': 'sourpuss',
             'name': 'Sourpuss',
-            'img': 'sourpuss.png'
+            'img': 'sourpuss.jpg',
+            'url': 'http://sourpussclothing.com/'
         },
         {
             'id': 'sutherland-consulting',
             'name': 'Sutherland Consulting',
-            'img': 'sutherlandconsulting.png'
+            'img': 'sutherlandconsulting.jpg'
         },
         {
             'id': 'toddle',
             'name': 'Toddle',
-            'img': 'toddle.png'
+            'img': 'toddle.jpg',
+            'url': 'http://www.toddle.com/'
         },
         {
             'id': 'tom-shiffman-photo',
             'name': 'Tom Shiffman Photograpgy',
-            'img': 'tomshiffmanphoto.jpg'
+            'img': 'tomshiffmanphoto.jpg',
+            'url': 'http://tomshiffmanphoto.com/'
         },
         {
             'id': 'wise-bites',
             'name': 'Wise Bites',
-            'img': 'wise-bites.jpg'
+            'img': 'wise-bites.jpg',
+            'url': 'http://wise-bites.com/'
         },
         {
             'id': 'youth-juice',
             'name': 'Youth Juice',
-            'img': 'youthjuice.png'
+            'img': 'youthjuice.jpg',
+            'url': 'http://youthjuice.com/'
         }
     ];
 })
