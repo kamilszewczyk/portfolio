@@ -1,8 +1,10 @@
 angular.module('portfolioApp', [
-        'templates-app',
-        'templates-common',
-        'portfolioApp.home',
-        'ui.router'
+    'templates-app',
+    'templates-common',
+    'portfolioApp.home',
+    'portfolioApp.project',
+    'ui.router',
+    'projectService'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
@@ -15,7 +17,7 @@ angular.module('portfolioApp', [
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
         $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
                 if ( angular.isDefined( toState.data.pageTitle ) ) {
-                        $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate' ;
+                        $scope.pageTitle = toState.data.pageTitle + ' | Kamil Szewczyk' ;
                 }
         });
 })

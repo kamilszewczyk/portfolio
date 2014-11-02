@@ -76,8 +76,36 @@ h6              { font-size: .75em; margin: 1.67em 0 }
     &:after { clear: both; }
 }
 
+#menu_icon, .close_menu {
+    float: right;
+    margin-right: 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('img/men_icons.png') no-repeat;
+}
 
-/*  Header  */
+#menu_icon {
+    background-position: 0 0;
+}
+.close_menu {
+    background-position: -41px 0!important;
+}
+
+/*  Main  */
+.main {
+    width: 100%;
+    height: 100%;
+    padding-left: 300px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 55;
+    background: #f6f6f6;
+    clear: both;
+}
+
 @media (min-width:900px){
     header {
         display: block;
@@ -180,228 +208,60 @@ h6              { font-size: .75em; margin: 1.67em 0 }
         }
     }
 
-    #menu_icon,
-    .close_menu {
+    #menu_icon, .close_menu {
         display: none;
     }
 }
 
-#menu_icon,
-.close_menu {
-    float: right;
-    margin-right: 40px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background: url('img/men_icons.png') no-repeat;
-}
-
-#menu_icon {
-    background-position: 0 0;
-}
-.close_menu {
-    background-position: -41px 0!important;
-}
-
-/*  Main  */
-.main {
-    width: 100%;
-    height: 100%;
-    padding-left: 300px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 55;
-    background: #f6f6f6;
-    clear: both;
-}
-
-/*  Inner Page  */
-.top {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    display: block;
-    position: relative;
-    background: url('img/hero_image.jpg') no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: 50% 50%;
-}
-
-.work_nav {
-    display: block;
-    width: 100%;
-
-    .btn { float: right; }
-    ul {
-        list-style: none;
-        li {
-            display: block;
-            float: left;
-            margin: 0 0 1px 1px;
-            position: relative;
-        }
-    }
-    a {
-        display: block;
-        width: 40px;
-        height: 40px;
-        background: url('img/p_navigation.png') no-repeat;
-        background-position: 0 0;
-
-        &.previous { background-position: 0 0; }
-        &.grid{ background-position: -41px 0; }
-        &.next{ background-position: -82px 0; }
-    }
-}
-
-
-.top .title{
-    display: block;
-    width: 100%;color: #4b4848;
-    font-family: "raleway", arial;
-    font-size: 26px;
-    font-weight: bolder;
-    background: rgba(255, 255, 255, .7);
-    padding: 20px;
-    text-transform: uppercase;
-    line-height: 30px;
-    margin: 0!important;
-    overflow: hidden;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-
-}
-
-.content_header{
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-    left: 50%;
-    margin-left: -46.36363636363637%;
-}
-
-.content{
-    color: #4b4848;
-    font-family: @sansFontFamily;
-    font-size: 15px;
-    line-height: 22px;
-    padding: 60px 30px;
-    background: #fff;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.content p{
-    color: #4b4848;
-    font-family: @sansFontFamily;
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 60px;
-}
-
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6{
-    color: #4b4848;
-    font-family: @sansFontFamily;
-    font-weight: bold;
-    line-height: 28px;
-    margin-bottom: 30px;
-
-}
-
-
-/*  Contact page map  */
-#map .map_adresse{
-    font-family: @sansFontFamily;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-#map .map_address,
-#map .map_tel{
-    padding: 5px;
-}
-
-#map .map_address .address,
-#map .map_tel .tel{
-    font-family: @sansFontFamily;
-    font-weight: bolder;
-}
-
-
-
 /*  Responsive code  */
 @media (max-width:900px){
-
-    header{
+    header {
         display: block;
         width: 100%;
         min-height: 100px;
         padding: 0;
         position: relative;
-    }
-    header .logo{
-        margin: 40px 0 0 30px;
-        display: inline-block;
-    }
-    header .footer{
-        display: none;
-    }
-    header #menu_icon,
-    header .close_menu{
-        float: right;
-        margin: 30px 30px 0 0;
-    }
-    header nav ul{
-        list-style: none;
-        display: none;
-        margin-top: 35px;
-        position: relative;
-    }
-    header nav ul li a{
-        display: block;
-        width: 100%;
-        padding: 30px 0;
-        text-align: center;
-        color: #454545;
-        font-family: @sansFontFamily;
-        font-size: 14px;
-        text-decoration: none;
-        border-top: 1px solid #f7f5f5;
-        background: #fff;
-    }
-    header nav ul li a:active{
-        background: #f7f5f5;
-    }
-    #menu_icon,
-    .close_menu,
-    .show_menu{
-        display: block;
-    }
-    .show_menu{
-        display: block;
+        .logo {
+            margin: 40px 0 0 30px;
+            display: inline-block;
+        }
+        .footer {
+            display: none;
+        }
+        #menu_icon, .close_menu {
+            float: right;
+            margin: 30px 30px 0 0;
+        }
+        nav ul {
+            list-style: none;
+            display: none;
+            margin-top: 35px;
+            position: relative;
+            li a {
+                display: block;
+                width: 100%;
+                padding: 30px 0;
+                text-align: center;
+                color: #454545;
+                font-family: @sansFontFamily;
+                font-size: 14px;
+                text-decoration: none;
+                border-top: 1px solid #f7f5f5;
+                background: #fff;
+                &:active {
+                    background: #f7f5f5;
+                }
+            }
+        }
     }
 
-    .main .work{
-        width: 50%;
+    #menu_icon, .close_menu, .show_menu {
+        display: block;
     }
-    .main{
+    .show_menu {
+        display: block;
+    }
+    .main {
         width: 100%;
         position: relative;
         padding-left: 0;
@@ -416,4 +276,5 @@ h6              { font-size: .75em; margin: 1.67em 0 }
  */
 
 @import '../app/home/home.less';
+@import '../app/project/project.less';
 
