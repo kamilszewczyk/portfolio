@@ -4,6 +4,8 @@ angular.module('portfolioApp', [
     'ngSanitize',
     'portfolioApp.home',
     'portfolioApp.project',
+    'portfolioApp.about',
+    'portfolioApp.contact',
     'ui.router',
     'projectService'
 ])
