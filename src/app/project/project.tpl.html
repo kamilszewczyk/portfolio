@@ -16,6 +16,12 @@
 
 <section class="wrapper">
     <div class="content">
+        <p ng-bind-html="project.description"></p>
+        <img ng-src="assets/project-browser/{{project.browser}}" />
+        <p ng-bind-html="project.tasks"></p>
+        <p>Visit this page at: <a href="{{project.url}}">{{project.url}}</a></p>
+        <p>Tags: {{project.tags.join(', ')}}</p>
 
-    </div><!-- end content -->
+        <div class="clearfix"></div>
+    </div>
 </section>

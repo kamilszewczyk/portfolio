@@ -2,5 +2,9 @@
     "id": "bike-swanky",
     "name": "Bike Swanky",
     "img": "bikeswanky.jpg",
-    "ult": "https://www.bikeswanky.co.uk/"
+    "browser": "bikeswanky.png",
+    "url": "http://www.bikeswanky.co.uk/",
+    "description": "BikeSwanky is as site build by cyclist passionates for passionates. From a website where you can buy bike it turns into website where you can buy or lease, join bikeSwanky enthusiasts and become a cyclist.",
+    "tasks": "BikeSwanky was a brand change from BikeLeasingCompany. Company decided to move away from Magento into Drupal e-commerce system. I helped with the transition from backend and frontend side, creating new templates, importing products into database, creating modules for handling recurring payments and generating automated lease agreements.",
+    "tags": ["Magento", "Drupal"]
 }

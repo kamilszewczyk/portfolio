@@ -1,6 +1,7 @@
 angular.module('portfolioApp', [
     'templates-app',
     'templates-common',
+    'ngSanitize',
     'portfolioApp.home',
     'portfolioApp.project',
     'ui.router',

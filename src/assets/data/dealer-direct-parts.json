@@ -2,5 +2,9 @@
     "id": "dealer-direct-parts",
     "name": "Dealer Direct Parts",
     "img": "dealerdirectparts.jpg",
-    "url": "http://www.dealerdirectparts.com/"
+    "browser": "dealerdirectparts.png",
+    "url": "http://www.dealerdirectparts.com/",
+    "description": "Dealer Direct Parts is a large online source for OEM auto parts for various brands with a wholesale price.",
+    "tasks": "I build the Magento theme based on provided PSD designs and worked on integrating Magento into theme",
+    "tags": ["Magento", "Photoshop", "CSS"]
 }
