@@ -27,7 +27,7 @@ angular.module( 'portfolioApp.contact', [
             '<div>Date: ' + (new Date()).toString() + '</div>';
 
         $http({
-            url: 'sendgrid.php',
+            url: 'src/sendgrid.php',
             method: 'POST',
             data: {
                 'from': $scope.user.email,

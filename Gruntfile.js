@@ -139,6 +139,26 @@ module.exports = function ( grunt ) {
           }
         ]
       },
+      build_php: {
+        files: [
+          {
+            src: [ '<%= vendor_files.php %>' ],
+            dest: '<%= build_dir %>',
+            cwd: '.',
+            expand: true
+          }
+        ]
+      },
+      compile_php: {
+        files: [
+          {
+            src: [ '<%= vendor_files.php %>' ],
+            dest: '<%= compile_dir %>',
+            cwd: '.',
+            expand: true
+          }
+        ]
+      },
       compile_assets: {
         files: [
           {
@@ -474,6 +494,13 @@ module.exports = function ( grunt ) {
         tasks: [ 'copy:build_app_assets', 'copy:build_vendor_assets' ]
       },
 
+      php: {
+        files: [
+            'src/*.php'
+        ],
+        tasks: [ 'copy:build_php' ]
+      },
+
       /**
        * When index.html changes, we need to compile it.
        */
@@ -554,7 +581,7 @@ module.exports = function ( grunt ) {
   grunt.registerTask( 'build', [
     'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
-    'copy:build_appjs', 'copy:build_vendorjs', 'index:build'
+    'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_php', 'index:build'
   ]);
 
   /**
@@ -562,7 +589,7 @@ module.exports = function ( grunt ) {
    * minifying your code.
    */
   grunt.registerTask( 'compile', [
-    'less:compile', 'copy:compile_assets', 'ngmin', 'concat:compile_js', 'uglify', 'index:compile'
+    'less:compile', 'copy:compile_assets', 'copy:compile_php', 'ngmin', 'concat:compile_js', 'uglify', 'index:compile'
   ]);
 
   /**

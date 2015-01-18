@@ -74,6 +74,11 @@ module.exports = {
         ],
         assets: [
             'common/projects.json'
+        ],
+        php: [
+            'vendor/autoload.php',
+            'vendor/sendgrid/**',
+            'src/sendgrid.php'
         ]
-    },
+    }
 };
