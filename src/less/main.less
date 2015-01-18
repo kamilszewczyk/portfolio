@@ -166,29 +166,22 @@ h6              { font-size: .75em; margin: 1.67em 0 }
                     display: block;
                     width: 30px;
                     height: 30px;
-                    background: url('img/sm.png') no-repeat;
-                    background-position: 0 0;
+                    background: url('img/sm.jpg') no-repeat;
+                    background-position-y: -30px;
                     &:hover{
-                        background: url('img/sm_hover.png') no-repeat;
+                        background-position-y: 0px;
                     }
 
                     &.fb, &.fb:hover {
-                        background-position: 0 0;
+                        background-position-x: 0;
                     }
-                    &.google, &.google:hover {
-                        background-position: -31px 0;
+
+                    &.linked-in, &.linked-in:hover {
+                        background-position-x: -30px;
                     }
-                    &.behance, &.behance:hover {
-                        background-position: -62px 0;
-                    }
-                    &.twitter, &.twitter:hover {
-                        background-position: -93px 0;
-                    }
-                    &.dribble, &.dribble:hover {
-                        background-position: -124px 0;
-                    }
-                    &.rss, &.rss:hover {
-                        background-position: -155px 0;
+
+                    &.magento, &.magento:hover {
+                        background-position-x: -60px;
                     }
                 }
             }
