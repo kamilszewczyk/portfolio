@@ -124,24 +124,27 @@ h6              { font-size: .75em; margin: 1.67em 0 }
             margin-top: 100px;
         }
 
-        nav ul {
-            display: block;
-            overflow: hidden;
-            margin-top: 100px;
-            list-style: none;
-
-            li {
+        nav {
+            clear: both;
+            ul {
                 display: block;
-                margin-bottom: 30px;
+                overflow: hidden;
+                margin-top: 100px;
+                list-style: none;
 
-                a {
-                    color: #454545;
-                    font-family: @sansFontFamily;
-                    font-size: 14px;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-                    &:hover, &.selected {
-                        color: #969595;
+                li {
+                    display: block;
+                    margin-bottom: 30px;
+
+                    a {
+                        color: #454545;
+                        font-family: @sansFontFamily;
+                        font-size: 14px;
+                        text-decoration: none;
+                        letter-spacing: 1px;
+                        &:hover, &.selected {
+                            color: #969595;
+                        }
                     }
                 }
             }
@@ -216,7 +219,7 @@ h6              { font-size: .75em; margin: 1.67em 0 }
         position: relative;
         .logo {
             margin: 40px 0 0 30px;
-            display: inline-block;
+            float: left;
         }
         .footer {
             display: none;
@@ -225,24 +228,26 @@ h6              { font-size: .75em; margin: 1.67em 0 }
             float: right;
             margin: 30px 30px 0 0;
         }
-        nav ul {
-            list-style: none;
-            display: none;
-            margin-top: 35px;
-            position: relative;
-            li a {
-                display: block;
-                width: 100%;
-                padding: 30px 0;
-                text-align: center;
-                color: #454545;
-                font-family: @sansFontFamily;
-                font-size: 14px;
-                text-decoration: none;
-                border-top: 1px solid #f7f5f5;
-                background: #fff;
-                &:active {
-                    background: #f7f5f5;
+        nav {
+            clear: both;
+            ul {
+                list-style: none;
+                margin-top: 35px;
+                position: relative;
+                li a {
+                    display: block;
+                    width: 100%;
+                    padding: 30px 0;
+                    text-align: center;
+                    color: #454545;
+                    font-family: @sansFontFamily;
+                    font-size: 14px;
+                    text-decoration: none;
+                    border-top: 1px solid #f7f5f5;
+                    background: #fff;
+                    &:active {
+                        background: #f7f5f5;
+                    }
                 }
             }
         }
