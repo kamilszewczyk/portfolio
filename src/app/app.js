@@ -17,7 +17,7 @@ angular.module('portfolioApp', [
 .run( function run () {
 })
 
-.controller( 'AppCtrl', function AppCtrl ( $scope, $window ) {
+.controller( 'AppCtrl', function AppCtrl ( $scope, $window, $location ) {
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
         if ( angular.isDefined( toState.data.pageTitle ) ) {
             $scope.pageTitle = toState.data.pageTitle + ' | Kamil Szewczyk Magento Certified Developer' ;
@@ -28,6 +28,8 @@ angular.module('portfolioApp', [
     } else {
         $scope.toggle = false;
     }
+
+    $window.ga('send', 'pageview', { page: $location.path() });
 })
 ;
 
