@@ -1,6 +1,5 @@
 angular.module( 'portfolioApp.contact', [
     'ui.router',
-    'placeholders',
     'ui.bootstrap'
 ])
 

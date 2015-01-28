@@ -1,6 +1,5 @@
 angular.module( 'portfolioApp.about', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 

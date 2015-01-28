@@ -10,9 +10,12 @@ angular.module('portfolioApp', [
     'projectService'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-        $urlRouterProvider.otherwise( '/home' );
-})
+.config(['$locationProvider', '$urlRouterProvider', function($locationProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise( '/home' );
+    $locationProvider.html5Mode({
+        enabled: true
+    });
+}])
 
 .run( function run () {
 })
