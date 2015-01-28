@@ -23,16 +23,16 @@
         <nav>
             <ul ng-show="toggle" class="ng-hide">
                 <li><a href="/home" class="selected">Home</a></li>
-                <li><a href="assets/cv_szewczyk.pdf">CV</a></li>
+                <li><a href="/assets/cv_szewczyk.pdf" analytics-on analytics-category="Download" analytics-event="CV" target="_blank">CV</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </nav><!-- end navigation menu -->
 
         <div class="footer clearfix">
             <ul class="social clearfix">
-                <li><a href="https://www.facebook.com/marrbacca" class="fb" data-title="Facebook"></a></li>
-                <li><a href="http://uk.linkedin.com/in/kszewczyk" class="linked-in" data-title="LinkedIn"></a></li>
-                <li><a href="http://www.magentocommerce.com/certification/directory/dev/89345/" class="magento" data-title="Magento"></a></li>
+                <li><a href="https://www.facebook.com/marrbacca" class="fb" data-title="Facebook" analytics-on analytics-category="Social" analytics-event="Facebook"></a></li>
+                <li><a href="http://uk.linkedin.com/in/kszewczyk" class="linked-in" data-title="LinkedIn" analytics-on analytics-category="Social" analytics-event="LinkedIn"></a></li>
+                <li><a href="http://www.magentocommerce.com/certification/directory/dev/89345/" class="magento" data-title="Magento" analytics-on analytics-category="Social" analytics-event="Magento"></a></li>
             </ul><!-- end social -->
 
             <div class="rights">
@@ -50,6 +50,7 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-58687484-1', 'auto');
+        ga('require', 'displayfeatures');
 
     </script>
     </body>

@@ -2,7 +2,7 @@ angular.module( 'portfolioApp.home', [
     'ui.router'
 ])
 
-.config(['$stateProvider', function ($stateProvider) {
+.config(function config($stateProvider) {
     $stateProvider.state( 'home', {
         url: '/home',
         views: {
@@ -13,7 +13,7 @@ angular.module( 'portfolioApp.home', [
         },
         data:{ pageTitle: 'Home' }
     });
-}])
+})
 
 /**
  * And of course we define a controller for our route.

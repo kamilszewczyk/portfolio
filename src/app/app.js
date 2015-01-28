@@ -7,15 +7,18 @@ angular.module('portfolioApp', [
     'portfolioApp.about',
     'portfolioApp.contact',
     'ui.router',
-    'projectService'
+    'projectService',
+    'angulartics',
+    'angulartics.google.analytics'
 ])
 
-.config(['$locationProvider', '$urlRouterProvider', function($locationProvider, $urlRouterProvider) {
+.config(function config($locationProvider, $urlRouterProvider, $analyticsProvider) {
     $urlRouterProvider.otherwise( '/home' );
     $locationProvider.html5Mode({
         enabled: true
     });
-}])
+    $analyticsProvider.firstPageview(true);
+})
 
 .run( function run () {
 })
@@ -31,8 +34,6 @@ angular.module('portfolioApp', [
     } else {
         $scope.toggle = false;
     }
-
-    $window.ga('send', 'pageview', { page: $location.path() });
 })
 ;
 

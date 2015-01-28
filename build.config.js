@@ -69,6 +69,8 @@ module.exports = {
             'vendor/angular-ui-utils/modules/route/route.js',
             'vendor/angular-resource/angular-resource.js',
             'vendor/angular-sanitize/angular-sanitize.js',
+            'vendor/angulartics/dist/angulartics.min.js',
+            'vendor/angulartics/dist/angulartics-ga.min.js'
         ],
         css: [
         ],
