@@ -1,6 +1,8 @@
-<section class="top">
-    <img ng-src="assets/project-bg/{{project.img}}" />
-    <div class="wrapper content_header clearfix">
+<section class="row">
+    <div class="col-sm-12">
+        <img ng-src="assets/project-bg/{{project.img}}" />
+    </div>
+    <div class="col-sm-10 col-sm-offset-1">
         <div class="work_nav">
 
             <ul class="btn clearfix">
@@ -12,10 +14,10 @@
         </div><!-- end work_nav -->
         <h1 class="title">{{project.name}}</h1>
     </div>
-</section><!-- end top -->
+</section>
 
-<section class="wrapper">
-    <div class="content">
+<section class="row">
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
         <p ng-bind-html="project.description"></p>
         <img ng-src="assets/project-browser/{{project.browser}}" />
         <p ng-bind-html="project.tasks"></p>
