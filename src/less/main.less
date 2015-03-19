@@ -64,10 +64,14 @@ h5              { font-size: .83em; margin: 1.5em 0 }
 h6              { font-size: .75em; margin: 1.67em 0 }
 
 header {
-    margin: 0 20px;
+    margin: 10px 20px;
 
     #nav-toggle {
-        padding: 10px 35px 16px 0px;
+        margin-top: 5px;
+        display: block;
+        position: relative;
+        width: 35px;
+        height: 25px;
         span, span:before, span:after {
             cursor: pointer;
             border-radius: 1px;
@@ -79,17 +83,17 @@ header {
             content: '';
             transition: all 500ms ease-in-out;
         }
-        span:before { top: -10px; }
-        span:after { bottom: -10px; }
+        span:before { top: 10px; }
+        span:after { top: 20px; }
         &.active span { background-color: transparent; }
-        &.active span:before, &.active span:after { top: 0; }
         &.active span:before { transform: rotate(45deg); }
-        &.active span:after { transform: rotate(-45deg); }
+        &.active span:after { transform: translateY(-10px) rotate(-45deg); }
     }
 
 
-  nav {
+    nav {
         clear: both;
+
         ul {
             display: block;
             overflow: hidden;
@@ -160,6 +164,12 @@ header {
             font-weight: bold;
             text-decoration: none;
         }
+    }
+}
+
+@media (max-width: 767px) {
+    header nav ul {
+        margin-top: 25px;
     }
 }
 

@@ -29,6 +29,14 @@ angular.module('portfolioApp', [
             $scope.pageTitle = toState.data.pageTitle + ' | Kamil Szewczyk Magento Certified Developer' ;
         }
     });
+
+    $scope.closeMenu = function() {
+        if (jQuery('#nav-toggle').is(':visible')) {
+            jQuery("#nav-content").collapse("toggle");
+            $scope.isNavOpen = !$scope.isNavOpen;
+        }
+    };
+
     if ($window.outerWidth > 900) {
         $scope.toggle = true;
     } else {

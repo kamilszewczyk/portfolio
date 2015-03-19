@@ -70,7 +70,9 @@ module.exports = {
             'vendor/angular-resource/angular-resource.js',
             'vendor/angular-sanitize/angular-sanitize.js',
             'vendor/angulartics/dist/angulartics.min.js',
-            'vendor/angulartics/dist/angulartics-ga.min.js'
+            'vendor/angulartics/dist/angulartics-ga.min.js',
+            'vendor/jquery/dist/jquery.min.js',
+            'vendor/bootstrap/dist/js/bootstrap.min.js'
         ],
         css: [
         ],
