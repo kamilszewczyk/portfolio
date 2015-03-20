@@ -1,7 +1,7 @@
 <?php
 require "../../vendor/autoload.php";
 // using SendGrid's PHP Library - https://github.com/sendgrid/sendgrid-php
-$sendgrid = new SendGrid("Marrbacca", "qazse1423");
+$sendgrid = new SendGrid();
 $email    = new SendGrid\Email();
 
 try {
