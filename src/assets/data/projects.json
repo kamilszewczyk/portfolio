@@ -1,5 +1,15 @@
 [
     {
+        "id": "osprey",
+        "name": "Osprey",
+        "img": "osprey.jpg"
+    },
+    {
+        "id": "mih-jeans",
+        "name": "MiH Jeans",
+        "img": "mih-jeans.jpg"
+    },
+    {
         "id": "artintheage",
         "name": "Art in the Age",
         "img": "artintheage.jpg"
@@ -28,5 +38,10 @@
         "id": "eternal-snow",
         "name": "Eternal Snow",
         "img": "eternalsnow.jpg"
+    },
+    {
+        "id": "kidsongs",
+        "name": "Kidsongs",
+        "img": "kidsongs.jpg"
     }
 ]

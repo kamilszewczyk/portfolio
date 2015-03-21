@@ -2,5 +2,9 @@
     "id": "kidsongs",
     "name": "Kidsongs",
     "img": "kidsongs.jpg",
-    "url": "http://www.kidsongs.com/"
+    "browser": "kidsongs.png",
+    "url": "http://www.kidsongs.com/",
+    "description": "Kidsongs.com is the official home of the Kidsongs brand of award winning kid’s music products. Kidsongs.com is committed to quality children’s music products, great customer service, happy customers and smiling children. Kidsongs supports teachers, charities and parent groups who are helping children.",
+    "tasks": "Working on Kidsongs.com I was responsible for creating special site for presenting videos uploaded into Vimeo site. I created module that allowed to retrieved videos using Vimeo API, restrict access to some videos for subscribed customers, and track played videos. I also fixed CSS issues and minor problems with Magento.",
+    "tags": ["Magento", "CSS", "Vimeo API"]
 }
