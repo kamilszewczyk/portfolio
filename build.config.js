@@ -76,7 +76,8 @@ module.exports = {
         css: [
         ],
         assets: [
-            'common/projects.json'
+            'common/projects.json',
+            'vendor/bootstrap/dist/fonts/*'
         ],
         php: [
             'vendor/autoload.php',
