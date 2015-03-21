@@ -1,6 +1,5 @@
 angular.module( 'portfolioApp.contact', [
-    'ui.router',
-    'ui.bootstrap'
+    'ui.router'
 ])
 
 .config(function config( $stateProvider ) {
